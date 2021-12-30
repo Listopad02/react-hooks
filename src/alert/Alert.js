@@ -6,8 +6,8 @@ export default function Alert() {
     if (!alert.visible) return null
 
     return (
-        <div onClick={alert.toggle}>
-            This is very and very important message
+        <div onClick={alert.hide}>
+            { alert.text }
         </div>
     )
 }
